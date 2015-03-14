@@ -10,6 +10,23 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+ 
+    cin >> n;
+    
     return 0;
+}
+
+int long long sum(int arr[],int l,int r,int k)
+{
+    int long long total = 0;
+    
+    while(l<=r)
+    {
+        total += arr[l];
+        l += k;
+        
+    }
+    
+    return total;
+    
 }
